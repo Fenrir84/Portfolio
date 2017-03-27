@@ -1,0 +1,423 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>
+<html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>
+<html class="ie8" lang="en">    <![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Tyler Biddle</title>
+
+    <meta name="description" content="Tyler Biddle, Full-Stack Web Developer">
+    <meta name="keywords" content="MVC, .Net, C#, Javascript, jQuery, AngularJS">
+    <meta name="author" content="Tyler Biddle">
+    <link rel="icon" type="image/png" href="~/assets/favicon(1).ico">
+    <!-- Preloader -->
+    <link href="~/assets/custom/2.2.0/css/preloader.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/vendor/flaticons/flaticon.min.css?v=29022016" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/vendor/hover/css/hover-min.css?v=2.0.2" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/vendor/mfp/css/magnific-popup.min.css?v=1.1.0" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/vendor/owl-carousel/assets/owl.carousel.min.css?v=2.1.0" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+
+
+    <!-- Custom styles -->
+    <link href="~/assets/custom/2.2.0/css/style.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/custom/2.2.0/css/layouts/samuel.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/assets/custom/2.2.0/css/colors/default.css" id="color-styles" property='stylesheet' rel="stylesheet" type="text/css" media="screen" />
+    <style>
+        /*.orderElement {
+            transition: 1.0s linear all;
+        }
+
+        .ng-move {
+            transition: all 5.0s linear;
+            color: blue;
+            background-color: blue;
+            transition-duration: 1.0s;
+        }
+
+        .ng-move-active {
+            transition: 2.0s;
+            transition-duration: 1.0s;
+        }*/
+    </style>
+
+</head>
+
+<body id="samuel" ng-app="tylerModule" class="boxed">
+
+    <!--Pre-Loader-->
+    <div id="preloader"></div>
+
+    <header>
+        <section id="top-navigation" class="container-fluid nopadding">
+            <div class="row nopadding ident ui-bg-color01">
+                <!-- Photo -->
+                <a href="#">
+                    <div class="col-md-4 nopadding vc-photo photo-01">&nbsp;</div>
+                </a>
+                <!-- /Photo -->
+                <div class="col-md-8 vc-name nopadding">
+                    <!-- Name-Position -->
+                    <div class="row nopadding name">
+                        <div class="col-md-12 name-title"><h1 class="font-accident-two-extralight">Tyler Biddle</h1></div>
+
+                    </div>
+                    <div class="row nopadding position">
+                        <div class="col-md-12 position-title">
+                            <section class="cd-intro">
+                                <h2 class="cd-headline clip is-full-width font-accident-two-light">
+                                    <span>Professional </span>
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">Full Stack .NET</b>
+                                        <b>MVC 5</b>
+                                        <b>C#</b>
+                                        <b>jQuery</b>
+                                        <b>AngularJS</b>
+                                    </span>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- /Name-Position -->
+                    <!-- Main Navigation -->
+
+                    <ul id="nav" class="row nopadding cd-side-navigation">
+                        <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color01" data-animation-duration="1000" data-animation-delay="100">
+                            <a href="~/assets/TylerBiddle.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="flaticon-graduation61"></i><span>Resume</span></a>
+                        </li>
+                        <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color02" data-animation-duration="1000" data-animation-delay="300">
+                            <a href="https://www.linkedin.com/in/tyler-biddle-32757b75" class="hvr-sweep-to-bottom"><i class="flaticon-linkedin22"></i><span>Linked In</span></a>
+                        </li>
+                        <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color03" data-animation-duration="1000" data-animation-delay="500">
+                            <a href="https://github.com/Fenrir84" class="hvr-sweep-to-bottom"><i class="flaticon-book-bag2"></i><span>Github</span></a>
+                        </li>
+                        <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color04" data-animation-duration="1000" data-animation-delay="700">
+                            <a href="http://www.nerdsourced.com" class="hvr-sweep-to-bottom"><i class="flaticon-wordpress16"></i><span>Blog</span></a>
+                        </li>
+                    </ul>
+
+                    <!-- /Main Navigation -->
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Container -->
+    <div ng-controller="mainController as mainCtrl" class="content-wrap">
+
+        <section class="container-fluid" data-section="home">
+
+            <!-- Personal Flexy Section -->
+
+            @*<div class="" ng-repeat="element in mainCtrl.htmlElements | orderBy:'order'" ng-bind-html="element.html">*@
+
+            </div>
+            <div class="row flex-row">
+               
+                <div id="details" class="col-md-8 flex-column bg-color01 light nopadding"
+                     data-animation-origin="left"
+                     data-animation-duration="300"
+                     data-animation-delay="400"
+                     data-animation-distance="200px">
+                    <div class="padding-50 flex-panel">
+                        <div class="row row-no-padding">
+                            <div class="col-md-12 nopadding">
+                                <h3 class="font-accident-two-normal uppercase title">Full Stack .Net Web Developer</h3>
+                                <div class="quote">
+                                    <h4 class="font-accident-two-normal uppercase subtitle"><em>Let's build something together</em></h4>
+                                    <div class="dividewhite3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider-dynamic"></div>
+                        <div class="row nopadding">
+                            <div class="col-md-4 infoblock nopadding">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-paper40 color-blue"></i><div class="dividewhite1"></div></div>
+                                    <div class="col-xs-12 col-sm-11 col-md-9">
+                                        <h4 class="font-accident-two-medium uppercase">Agile Workflow</h4>
+                                        <p class="">
+                                            Experienced working in an iterative work environment, utilizing Agile/Scrum methodologies
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divider-dynamic"></div>
+                            </div>
+                            <div class="col-md-4 infoblock nopadding">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-circle-2 color-blue"></i><div class="dividewhite1"></div></div>
+                                    <div class="col-xs-12 col-sm-11 col-md-9">
+                                        <h4 class="font-accident-two-medium uppercase">Multiple Web APIs</h4>
+                                        <p class="">
+                                            Past experience includes Google Maps, IEX, and Sendgrid Inboud Parse
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divider-dynamic"></div>
+                            </div>
+                            <div class="col-md-4 infoblock nopadding">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-tool-1 color-blue"></i><div class="dividewhite1"></div></div>
+                                    <div class="col-xs-12 col-sm-11 col-md-9">
+                                        <h4 class="font-accident-two-medium uppercase">Responsive Bootstrap</h4>
+                                        <p class="">
+                                            Experience in responsive CSS design that looks good on any platform
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divider-dynamic"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="personal" class="col-md-4 flex-column light ui-block-color01 personal"
+                     data-animation-origin="right"
+                     data-animation-duration="500"
+                     data-animation-delay="600"
+                     data-animation-distance="100px">
+                    <div class="padding-50 flex-panel">
+                        <h3 class="font-accident-two-normal uppercase title">Personal Info</h3>
+                        <div class="dividewhite4"></div>
+                        <div>
+                            <div class="fullwidth box">
+                                <div class="one"><p class="uppercase">Name:</p></div>
+                                <div class="two"><p class="">Tyler B. Biddle</p></div>
+                            </div>
+                            <div class="fullwidth box">
+                                <div class="one"><p class="uppercase">Location:</p></div>
+                                <div class="two"><p class="">California</p></div>
+                            </div>
+                            <div class="fullwidth box">
+                                <div class="one"><p class="uppercase">Phone:</p></div>
+                                <div class="two"><p class="">(818) 875-1409</p></div>
+                            </div>
+                            <div class="fullwidth box">
+                                <div class="one"><p class="uppercase">Email:</p></div>
+                                <div class="two"><p class="">tylerbiddleb@gmail.com</p></div>
+                            </div>
+                        </div>
+                        <div class="dividewhite1"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="professional" class="container-fluid" data-section="home">
+
+            <div class="row flex-row">
+
+                <div id="pro-experience" class="col-md-4 flex-column dark nopadding ui-block-color02 flex-col">
+                    <div class="padding-50 flex-panel">
+                        <h3 class="font-accident-two-normal uppercase title">Experience</h3>
+                        <div class="dividewhite4"></div>
+                        <div class="experience">
+                            <ul class="">
+                                <li class="date">11/2016 - Present</li>
+                                <li class="company uppercase">
+                                    <a>
+                                        Retgrid
+                                    </a>
+                                </li>
+                                <li class="position">Full Stack Developer</li>
+                            </ul>
+                            <ul class="">
+                                <li class="date">03/2013 - 06/2015</li>
+                                <li class="company uppercase">
+                                    <a>
+                                        Avalon Event Productions
+                                    </a>
+                                </li>
+                                <li class="position">Web Copywriter</li>
+                            </ul>
+                            <ul class="">
+                                <li class="date">09/2012 - 12/2014</li>
+                                <li class="company uppercase">
+                                    <a>
+                                        Retinal Delights
+                                    </a>
+                                </li>
+                                <li class="position">Logistics Coordinator</li>
+                            </ul>
+                        </div>
+                        <div class="dividewhite1"></div>
+                    </div>
+                </div>
+                <div id="circle-skills" class="col-md-8 flex-column dark nopadding ui-block-color03 flex-col">
+                    <div class="padding-50 flex-panel">
+                        <h3 class="font-accident-two-normal uppercase title">Professional skills</h3>
+                        <div class="dividewhite1"></div>
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
+                                <div class="progressbar text-center">
+                                    <img style="height: 150px; width: 140px; overflow: hidden" src="~/assets/newJS.png" />
+                                    <h4 class="font-accident-two-bold uppercase">Javascript</h4>
+                                    <p class="font-regular-normal">
+                                        Front-end development in multiple frameworks, including <strong>jQuery</strong> and <strong>AngularJS</strong>
+                                    </p>
+                                </div>
+                                <div class="dividewhite1"></div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
+                                <div class="progressbar text-center">
+                                    <img style="height: 150px; width: 140px; overflow: hidden" src="~/assets/logo_chash.png" />
+
+                                    <h4 class="font-accident-two-bold uppercase">C#</h4>
+                                    <p class="font-regular-normal">
+                                        Full MVC 5 development with Razor layouts
+                                    </p>
+                                </div>
+                                <div class="dividewhite1"></div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
+                                <div class="progressbar text-center">
+                                    <img style="height: 150px; width: 140px; overflow: hidden" src="~/assets/newSQL.png" />
+
+                                    <h4 class="font-accident-two-bold uppercase">SQL</h4>
+                                    <p class="font-regular-normal">
+                                        Back end relational database storage using MS SQL-Server
+                                    </p>
+                                </div>
+                                <div class="dividewhite1"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    @*<footer ng-controller="tylerController as tyCtrl" class="padding-50 dark ui-bg-color01">
+        <div class="container-fluid nopadding">
+
+            <div class="row">
+                <div class="col-md-12 copyrights">
+                    <p>©2017 Tyler Biddle</p>
+                </div>
+            </div>
+            <button type="button" ng-click="tyCtrl.reorder()">REORDER</button>
+            <div class="orderElement" ng-repeat="element in tyCtrl.htmlElements | orderBy:'order'" ng-bind-html="element.html">
+
+            </div>
+        </div>
+    </footer>*@
+
+    <!-- Back to Top -->
+    <div id="back-top"></div>
+    <!-- /Back to Top -->
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+
+    <script src="~/assets/vendor/mfp/js/jquery.magnific-popup.min.js?v=1.1.0" type="text/javascript"></script>
+    <script src="~/assets/vendor/progressbar/progressbar.min.js?v=1.0.1" type="text/javascript"></script>
+
+    <script src="~/assets/vendor/anicounter/jquery.counterup.min.js?v=1.0" type="text/javascript"></script>
+    <script src="~/assets/vendor/pjax/jquery.pjax.min.js?v=1.9.6" type="text/javascript"></script>
+    <script src="~/assets/vendor/owl-carousel/owl.carousel.min.js?v=2.1.0" type="text/javascript"></script>
+    <script src="~/assets/vendor/headlines/headlines.min.js?v=1.0" type="text/javascript"></script>
+
+    <!-- Custom scripts -->
+    <script src="~/assets/custom/2.2.0/js/animation.js" type="text/javascript"></script>
+    <script src="~/assets/custom/2.2.0/js/custom.js" type="text/javascript"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script type="text/javascript">
+
+        angular.module("tylerModule", ["ngSanitize", "ngAnimate"]);
+
+        (function () {
+            "use strict";
+
+            angular.module("tylerModule").controller("tylerController", TylerController);
+            TylerController.$inject = [];
+            function TylerController() {
+                var vm = this;
+                vm.htmlElements = [
+                    { html: "<div class='orderElement row'><p>HELLO!!</p></div>", order: 2 },
+                    { html: "<div class='orderElement row'><p>GOODBYE!!</p></div>", order: 1 }];
+
+                vm.clickMe = _clickMe;
+                vm.reorder = _reorder;
+
+                function _reorder() {
+                    var temp = vm.htmlElements[0].order;
+                    vm.htmlElements[0].order = vm.htmlElements[1].order;
+                    vm.htmlElements[1].order = temp;
+                }
+
+                function _clickMe() {
+                    console.log("It works!");
+                }
+
+            }
+
+        })();
+
+        (function () {
+            "use strict";
+
+            angular.module("tylerModule").controller("mainController", MainController);
+            MainController.$inject = [];
+            function MainController() {
+                var vm = this;
+                vm.htmlElements =
+                    [
+                    {
+                        html: "<div class='row flex- row'><div id='details' class='col-md-8 flex-column bg-color01 light nopadding' data-animation-origin='left'data-animation-duration='300'data-animation-delay='400'data-animation-distance='200px'><div class='padding-50 flex-panel'><div class='row row-no-padding'><div class='col-md-12 nopadding'><h3 class='font-accident-two-normal uppercase title'>Full Stack .Net Web Developer</h3><div class='quote'><h4 class='font-accident-two-normal uppercase subtitle'><em>Let's build something together</em></h4><div class='dividewhite3'></div></div></div></div><div class='divider-dynamic'></div><div class='row nopadding'><div class='col-md-4 infoblock nopadding'><div class='row'><div class='col-xs-12 col-sm-1 col-md-3'><i class='flaticon-paper40 color-blue'></i><div class='dividewhite1'></div></div><div class='col-xs-12 col-sm-11 col-md-9'><h4 class='font-accident-two-medium uppercase'>Agile Workflow</h4><p class=''>Experienced working in an iterative work environment, utilizing Agile/Scrum methodologies</p></div></div><div class='divider-dynamic'></div></div><div class='col-md-4 infoblock nopadding'><div class='row'><div class='col-xs-12 col-sm-1 col-md-3'><i class='flaticon-circle-2 color-blue'></i><div class='dividewhite1'></div></div><div class='col-xs-12 col-sm-11 col-md-9'><h4 class='font-accident-two-medium uppercase'>Multiple Web APIs</h4><p class=''>Past experience includes Google Maps, IEX, and Sendgrid Inboud Parse</p></div></div><div class='divider-dynamic'></div></div><div class='col-md-4 infoblock nopadding'><div class='row'><div class='col-xs-12 col-sm-1 col-md-3'><i class='flaticon-tool-1 color-blue'></i><div class='dividewhite1'></div></div><div class='col-xs-12 col-sm-11 col-md-9'><h4 class='font-accident-two-medium uppercase'>Responsive Bootstrap</h4><p class=''>Experience in responsive CSS design that looks good on any platform</p></div></div><div class='divider-dynamic'></div></div></div></div></div><div id='personal' class='col-md-4 flex-column light ui-block-color01 personal'data-animation-origin='right'data-animation-duration='500'data-animation-delay='600'data-animation-distance='100px'><div class='padding-50 flex-panel'><h3 class='font-accident-two-normal uppercase title'>Personal Info</h3><div class='dividewhite4'></div><div><div class='fullwidth box'><div class='one'><p class='uppercase'>Name:</p></div><div class='two'><p class=''>Tyler B. Biddle</p></div></div><div class='fullwidth box'><div class='one'><p class='uppercase'>Location:</p></div><div class='two'><p class=''>California</p></div></div><div class='fullwidth box'><div class='one'><p class='uppercase'>Phone:</p></div><div class='two'><p class=''>(818) 875-1409</p></div></div><div class='fullwidth box'><div class='one'><p class='uppercase'>Email:</p></div><div class='two'><p class=''>tylerbiddleb@gmail.com</p></div></div></div><div class='dividewhite1'></div></div></div></div >", order: 2 }
+                    
+                    ];
+
+                vm.clickMe = _clickMe;
+                vm.reorder = _reorder;
+
+                function _reorder() {
+                    var temp = vm.htmlElements[0].order;
+                    vm.htmlElements[0].order = vm.htmlElements[1].order;
+                    vm.htmlElements[1].order = temp;
+                }
+
+                function _clickMe() {
+                    console.log("It works!");
+                }
+
+            }
+
+        })();
+
+
+    </script>
+
+</body>
+
+</html>
